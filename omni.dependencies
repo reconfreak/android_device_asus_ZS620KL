@@ -42,8 +42,8 @@
     "revision": "android-8.1"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_asus_sdm845",
+    "remote": "github",
+    "repository": "scanno/android_kernel_asus_sdm845",
     "target_path": "kernel/asus/sdm845",
     "revision": "android-8.1"
   },
