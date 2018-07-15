@@ -159,12 +159,12 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/asus/ZS620KL/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
-    device/asus/ZS620KL/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl
+    device/asus/ZS620KL/keylayout/goodixfp.kl:system/usr/keylayout/goodixfp.kl \
+    device/asus/ZS620KL/keylayout/fts_ts.kl:system/usr/keylayout/fts_ts.kl
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.oneplus6
+    lights.ZS620KL
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.lights=ZS620KL
