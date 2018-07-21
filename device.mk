@@ -44,8 +44,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 AB_OTA_PARTITIONS += \
     boot \
-    system \
-    vbmeta
+    system
+#    vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
