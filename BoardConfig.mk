@@ -200,7 +200,7 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 #DEVICE_MATRIX_FILE := $(BOARD_PATH)/compatibility_matrix.xml
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := $(BOARD_PATH)/cryptfs_hw
 
 #vold
@@ -245,3 +245,5 @@ TW_MAX_BRIGHTNESS := 255
 TW_NO_USB_STORAGE := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
+TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
+TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT}/system/lib64/android.hardware.boot@1.0.so
