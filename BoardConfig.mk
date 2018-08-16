@@ -91,7 +91,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_SOURCE := kernel/asus/sdm845
-TARGET_KERNEL_CONFIG := omni_sdm845_defconfig
+#TARGET_KERNEL_CONFIG := omni_sdm845_defconfig
+TARGET_KERNEL_CONFIG := omni-inline_sdm845_defconfig
 #TARGET_PREBUILT_KERNEL := $(BOARD_PATH)/Image.gz-dtb
 
 # partitions
@@ -250,3 +251,5 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT}/system/lib64/android.hardware.boot@1.0.so
+
+PLATFORM_SECURITY_PATCH := 2025-12-31
