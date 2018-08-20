@@ -16,3 +16,5 @@
 /vendor/firmware/libpn553_fw.so    u:object_r:firmware_file_nfc:s0
 
 /file_contexts.bin            u:object_r:vendor_file:s0
+
+/APD(/.*)?            u:object_r:vendor_file:s0
