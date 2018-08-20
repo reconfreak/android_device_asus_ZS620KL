@@ -20,3 +20,9 @@
 /APD(/.*)?            u:object_r:vendor_file:s0
 
 /asdf(/.*)?            u:object_r:vendor_file:s0
+
+/ADF(/.*)?            u:object_r:vendor_file:s0
+
+/factory(/.*)?            u:object_r:vendor_file:s0
+
+/xrom(/.*)?            u:object_r:vendor_file:s0
