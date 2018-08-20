@@ -18,3 +18,5 @@
 /file_contexts.bin            u:object_r:vendor_file:s0
 
 /APD(/.*)?            u:object_r:vendor_file:s0
+
+/asdf(/.*)?            u:object_r:vendor_file:s0
