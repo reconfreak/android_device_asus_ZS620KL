@@ -17,12 +17,12 @@
 
 /file_contexts.bin            u:object_r:vendor_file:s0
 
-/APD(/.*)?            u:object_r:vendor_file:s0
+/APD(/.*)?            u:object_r:demo_file:s0
 
-/asdf(/.*)?            u:object_r:vendor_file:s0
+/asdf(/.*)?            u:object_r:log_file:s0
 
-/ADF(/.*)?            u:object_r:vendor_file:s0
+/ADF(/.*)?            u:object_r:demo_file:s0
 
-/factory(/.*)?            u:object_r:vendor_file:s0
+/factory(/.*)?            u:object_r:fac_file:s0
 
-/xrom(/.*)?            u:object_r:vendor_file:s0
+/xrom(/.*)?            u:object_r:xrom_file:s0
