@@ -3,3 +3,8 @@ type oem_data_file, file_type, data_file_type;
 
 type oem_audio_device, dev_type;
 type firmware_file_nfc, file_type;
+
+type demo_file, file_type;
+type log_file, file_type, mlstrustedsubject;
+type fac_file, file_type;
+type xrom_file, file_type;
