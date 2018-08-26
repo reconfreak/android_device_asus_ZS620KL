@@ -73,7 +73,9 @@ ENABLE_SCHEDBOOST := true
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3
 #BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xA84000
+BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0xA84000
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=0.0 androidboot.vbmeta.avb_version=0.0
+BOARD_KERNEL_CMDLINE += buildv=WW_user_80.30.96.80_20180820
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # kernel cmdline addition for twrp
@@ -81,8 +83,8 @@ BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
-BOARD_RAMDISK_OFFSET     := 0x02000000
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_ROOT_EXTRA_FOLDERS := firmware bt_firmware dsp persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/xrom:/xrom /vendor/ADF:/ADF /vendor/APD:/APD /vendor/asdf:asdf /vendor/factory:factory
 TARGET_KERNEL_ARCH := arm64
